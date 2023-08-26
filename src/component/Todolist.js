@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import AddNewTodo from "./AddNewTodo";
 const Todolist=()=>{
    const [todos,setTodos] =useState([
@@ -15,6 +15,9 @@ const Todolist=()=>{
             {Text,id :Math.random()}
         ]);
     }
+    useEffect(()=>{
+        console.log('use effect',todos);
+    })
     return(
         <div>
             <ul>
