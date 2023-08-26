@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import AddNewTodo from "./AddNewTodo";
 const Todolist=()=>{
    const [todos,setTodos] =useState([
 
@@ -26,7 +27,7 @@ const Todolist=()=>{
              }
              )}
             </ul>
-            <button onClick={AddTodo} >ADD TODO</button>
+         <AddNewTodo/>
         </div>
     )
 
